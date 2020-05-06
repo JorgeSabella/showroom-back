@@ -4,7 +4,7 @@
   "main": "src",
   "private": true,
   "scripts": {
-    "start": "node index.js",
+    "start": "node .",
     "test": "jest",
     "coverage": "npm test -- --coverage",
     "postcoverage": "opn coverage/lcov-report/index.html",
@@ -13,9 +13,6 @@
     "lint": "eslint src",
     "docs": "apidoc -i src -o docs && apidoc-markdown -p docs -o DOCS.md",
     "postdocs": "opn docs/index.html"
-  },
-  "engines": {
-    "node": "10.15.3"
   },
   "jest": {
     "testEnvironment": "node",
